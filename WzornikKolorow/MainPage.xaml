@@ -16,20 +16,30 @@
                        Margin="25"/>
             <Label Text="Dobierz kolor suwakami i zapisz przyciskiem: "/>
             <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center">
-                <Label Text="R" Margin="20,0"/>
-                <Slider Minimum="0" Maximum="255" Value="255" WidthRequest="600"/>
-                <Label Text="66" Margin="20,0"/>
+                <Label Text="R" Margin="20,0" />
+                <Slider Minimum="0" Maximum="255" Value="255" WidthRequest="600"
+                        ValueChanged="Slider_ValueChanged"/>
+                <Label Margin="20,0" x:Name="lblSliderRValue" Text="255"/>
             </HorizontalStackLayout >
             <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center">
                 <Label Text="G" Margin="20,0"/>
-                <Slider Minimum="0" Maximum="255" Value="255"  WidthRequest="600"/>
-                <Label Text="113" Margin="20,0"/>
+                <Slider Minimum="0" Maximum="255" Value="255"  WidthRequest="600"
+                        ValueChanged="Slider_ValueChanged_1"/>
+                <Label Margin="20,0" x:Name="lblSliderGValue" Text="255"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center">
                 <Label Text="B" Margin="20,0"/>
-                <Slider Minimum="0" Maximum="255" Value="255"  WidthRequest="600"/>
-                <Label Text="185" Margin="20,0"/>
+                <Slider Minimum="0" Maximum="255" Value="255"  WidthRequest="600"
+                        ValueChanged="Slider_ValueChanged_2"/>
+                <Label Margin="20,0" x:Name="lblSliderBValue" Text="255"/>
             </HorizontalStackLayout>
+
+            <Button Text="Pobierz"
+                    WidthRequest="250"
+                    BackgroundColor="Peru"/>
+
+            <Label Text="255, 255, 255" BackgroundColor="White"
+                   Padding="15" WidthRequest="250"/>
         </VerticalStackLayout>
     </ScrollView>
 
