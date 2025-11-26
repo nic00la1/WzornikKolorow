@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WzornikKolorow", "WzornikKolorow\WzornikKolorow.csproj", "{57660AD6-F2EA-4ACA-B610-352DB003F347}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57660AD6-F2EA-4ACA-B610-352DB003F347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57660AD6-F2EA-4ACA-B610-352DB003F347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57660AD6-F2EA-4ACA-B610-352DB003F347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57660AD6-F2EA-4ACA-B610-352DB003F347}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C76C6720-0F97-4843-83BB-5640F28577DB}
+	EndGlobalSection
+EndGlobal
