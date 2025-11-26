@@ -36,9 +36,11 @@
 
             <Button Text="Pobierz"
                     WidthRequest="250"
-                    BackgroundColor="Peru"/>
+                    BackgroundColor="Peru"
+                    Clicked="Button_Clicked"/>
 
-            <Label Text="255, 255, 255" BackgroundColor="White"
+            <Label x:Name="lblKolor"
+                   Text="255, 255, 255" BackgroundColor="White"
                    Padding="15" WidthRequest="250"/>
         </VerticalStackLayout>
     </ScrollView>

@@ -27,5 +27,20 @@
             int newValue = (int)slider.Value;
             lblSliderBValue.Text = newValue.ToString("");
         }
+
+        public void ZliczWszystkieWartosci()
+        {
+            // Pobierz wartości z labeli suwaków
+            int r = int.Parse(lblSliderRValue.Text);
+            int g = int.Parse(lblSliderGValue.Text);
+            int b = int.Parse(lblSliderBValue.Text);
+
+            lblKolor.Text = $"{r}, {g}, {b}";
+        }
+
+        private void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            ZliczWszystkieWartosci();
+        }
     }
 }
