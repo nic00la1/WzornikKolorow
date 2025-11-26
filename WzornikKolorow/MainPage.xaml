@@ -9,7 +9,8 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Rectangle HorizontalOptions="Start"
+            <Rectangle x:Name="bigRectangle"
+                HorizontalOptions="Start"
                        WidthRequest="600"
                        HeightRequest="100"
                        Fill="White"

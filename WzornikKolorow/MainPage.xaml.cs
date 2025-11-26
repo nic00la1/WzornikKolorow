@@ -36,6 +36,7 @@
             int b = int.Parse(lblSliderBValue.Text);
 
             lblKolor.Text = $"{r}, {g}, {b}";
+            lblKolor.BackgroundColor = Color.FromRgb((byte)r, (byte)g, (byte)b);
         }
 
         private void Button_Clicked(System.Object sender, System.EventArgs e)
