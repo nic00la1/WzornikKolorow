@@ -9,23 +9,16 @@
 
         private void Slider_ValueChanged(System.Object sender, Microsoft.Maui.Controls.ValueChangedEventArgs e)
         {
-            Slider slider = sender as Slider;
-            int newValue = (int)slider.Value;
-            lblSliderRValue.Text = newValue.ToString("");
-        }
+            int r = (int)sliderR.Value;
+            int g = (int)sliderG.Value;
+            int b = (int)sliderB.Value;
 
-        private void Slider_ValueChanged_1(System.Object sender, Microsoft.Maui.Controls.ValueChangedEventArgs e)
-        {
-            Slider slider = sender as Slider;
-            int newValue = (int)slider.Value;
-            lblSliderGValue.Text = newValue.ToString("");
-        }
+            lblSliderRValue.Text = r.ToString();
+            lblSliderGValue.Text = g.ToString();
+            lblSliderBValue.Text = b.ToString();
 
-        private void Slider_ValueChanged_2(System.Object sender, Microsoft.Maui.Controls.ValueChangedEventArgs e)
-        {
-            Slider slider = sender as Slider;
-            int newValue = (int)slider.Value;
-            lblSliderBValue.Text = newValue.ToString("");
+            // duży prostokąt zmienia kolor na bieżąco
+            bigRectangle.Fill = Color.FromRgb((byte)r, (byte)g, (byte)b);
         }
 
         public void ZliczWszystkieWartosci()
@@ -36,7 +29,7 @@
             int b = int.Parse(lblSliderBValue.Text);
 
             lblKolor.Text = $"{r}, {g}, {b}";
-            lblKolor.BackgroundColor = Color.FromRgb((byte)r, (byte)g, (byte)b);
+            lblKolor.BackgroundColor = Color.FromRgb((byte)r, (byte)g, (byte)b); // mały prostokąt się zmienia, po kliknięciu przycisku
         }
 
         private void Button_Clicked(System.Object sender, System.EventArgs e)
